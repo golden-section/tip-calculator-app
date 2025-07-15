@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <title>Tip calculator app</title>
+
+
+</head>
+<body>
+
+  <main>
+    <div class="logo">
+      <img src="./assets/images/logo.svg" alt="logo">
+    </div>
+    <div class="container">
+      <div class="inputs">
+        <div class="input-group">
+          <label for="bill">Bill</label>
+          <input type="text" id="bill" name="bill" placeholder="0">
+        </div>
+        <div class="input-group">
+          <label for="custom">Select Tip %</label>
+          <div class="tip-grid">
+            <button  id="5%">5%</button>
+            <button  id="10%">10%</button>
+            <button  id="15%">15%</button>
+            <button  id="25%">25%</button>
+            <button  id="50%">50%</button>
+            <input type="text" name="custom" id="custom" class="custom" placeholder="Custom">
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="people">Number of People</label>
+          <input type="text" id="people" name="people" placeholder="0">
+        </div>
+      </div>
+      <div class="output">
+        <div class="amount-display">
+          <div>
+            <p class="output-label">Tip Amount<span>/ person</span></p>
+            <p class="output-value" id="tip-per-person">$0.00</p>
+          </div>
+          <div>
+            <p class="output-label">Total<span>/ person</span></p>
+            <p class="output-value" id="total-per-person">$0.00</p>
+          </div>
+        </div>
+
+        <button type="reset" id="reset" class="reset-btn" disabled>RESET</button>
+      </div>
+    </div>
+  </main>
+
+  
+</body>
+</html>

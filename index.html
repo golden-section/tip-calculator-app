@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
   
   <title>Tip calculator app</title>
 
@@ -27,12 +28,27 @@
         <div class="input-group">
           <label for="custom">Select Tip %</label>
           <div class="tip-grid">
-            <button  id="5%">5%</button>
-            <button  id="10%">10%</button>
-            <button  id="15%">15%</button>
-            <button  id="25%">25%</button>
-            <button  id="50%">50%</button>
-            <input type="text" name="custom" id="custom" class="custom" placeholder="Custom">
+            <div>
+              <input type="radio" name="tip" value="5%" id="five-percent" />
+              <label for="five-percent">5%</label>
+            </div>
+            <div>
+              <input type="radio" name="tip" value="10%" id="ten-percent" />
+              <label for="ten-percent">10%</label>
+            </div>
+            <div>
+              <input type="radio" name="tip" value="15%" id="fifteen-percent" />
+              <label for="fifteen-percent">15%</label>
+            </div>
+            <div>
+              <input type="radio" name="tip"  value="25%" id="twenty-five-percent" />
+              <label for="twenty-five-percent">25%</label>
+            </div>
+            <div>
+              <input type="radio" name="tip"  value="50%" id="fifty-percent" />
+              <label for="fifty-percent">50%</label>
+            </div>
+              <input type="text" name="custom" id="custom" class="custom" placeholder="Custom">
           </div>
         </div>
         <div class="input-group">
@@ -44,15 +60,15 @@
         <div class="amount-display">
           <div>
             <p class="output-label">Tip Amount<span>/ person</span></p>
-            <p class="output-value" id="tip-per-person">$0.00</p>
+            <p class="output-value" id="tip-amount">$0.00</p>
           </div>
           <div>
             <p class="output-label">Total<span>/ person</span></p>
-            <p class="output-value" id="total-per-person">$0.00</p>
+            <p class="output-value" id="total">$0.00</p>
           </div>
         </div>
 
-        <button type="reset" id="reset" class="reset-btn" disabled>RESET</button>
+        <button type="reset" id="reset" class="reset-btn">RESET</button>
       </div>
     </div>
   </main>

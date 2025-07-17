@@ -29,30 +29,33 @@
           <label for="custom">Select Tip %</label>
           <div class="tip-grid">
             <div>
-              <input type="radio" name="tip" value="5%" id="five-percent" />
+              <input type="radio" name="tip" value="5" id="five-percent" />
               <label for="five-percent">5%</label>
             </div>
             <div>
-              <input type="radio" name="tip" value="10%" id="ten-percent" />
+              <input type="radio" name="tip" value="10" id="ten-percent" />
               <label for="ten-percent">10%</label>
             </div>
             <div>
-              <input type="radio" name="tip" value="15%" id="fifteen-percent" />
+              <input type="radio" name="tip" value="15" id="fifteen-percent" />
               <label for="fifteen-percent">15%</label>
             </div>
             <div>
-              <input type="radio" name="tip"  value="25%" id="twenty-five-percent" />
+              <input type="radio" name="tip"  value="25" id="twenty-five-percent" />
               <label for="twenty-five-percent">25%</label>
             </div>
             <div>
-              <input type="radio" name="tip"  value="50%" id="fifty-percent" />
+              <input type="radio" name="tip"  value="50" id="fifty-percent" />
               <label for="fifty-percent">50%</label>
             </div>
               <input type="text" name="custom" id="custom" class="custom" placeholder="Custom">
           </div>
         </div>
         <div class="input-group">
-          <label for="people">Number of People</label>
+          <div class="labels-group">
+            <label for="people">Number of People</label>
+            <label for="people" class="warning-msg">Can't be zero</label>
+          </div>
           <input type="text" id="people" name="people" placeholder="0">
         </div>
       </div>
@@ -68,7 +71,7 @@
           </div>
         </div>
 
-        <button type="reset" id="reset" class="reset-btn">RESET</button>
+        <button type="reset" id="reset" class="reset-btn" disabled>RESET</button>
       </div>
     </div>
   </main>

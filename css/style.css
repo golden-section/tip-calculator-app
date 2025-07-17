@@ -41,9 +41,13 @@ body {
   color: var(--color-neutral-2);
 }
 
-.logo {
+header {
   margin-block-end: 5rem;
+  padding-block-start: 1rem;
 }
+/* .logo {
+  margin-block-end: 5rem;
+} */
 
 .logo img {
   margin-inline: auto;
@@ -227,6 +231,9 @@ input.custom {
 }
 
 @media screen and (max-width: 760px) {
+  header {
+    margin-block-end: 3rem;
+  }
   .container {
     flex-direction: column;
     row-gap: 2rem;

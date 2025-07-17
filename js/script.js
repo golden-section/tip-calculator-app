@@ -38,6 +38,8 @@ function calculate() {
 
   if (people === 0) {
     showWarning();
+    clearText(tipAmount);
+    clearText(totalAmount);
     return;
   }
 
